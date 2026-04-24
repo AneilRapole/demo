@@ -11,6 +11,8 @@ resource "google_compute_firewall" "default" {
     protocol = "tcp"
     ports    = ["80", "8080", "1000-2000"]
   }
+
+  source_tags = ["web"]
 }
 
 resource "google_compute_network" "vpc_network" {
