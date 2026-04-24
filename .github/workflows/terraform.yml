@@ -117,6 +117,3 @@ jobs:
       - name: Terraform Apply
         working-directory: ${{ env.TF_WORKING_DIR }}
         run: terraform apply -auto-approve tfplan.out
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
